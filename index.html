@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Procrastination Risk Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+</html>
+
+<h1>Procrastination Risk Analyzer</h1>
+
+<label>Assignment Name:</label>
+<input type="text" id="name"><br><br>
+
+<label>Days Untile Due:</label>
+<input type="number" id="days"><br><br>
+
+<label>Estimated Hours Needed:</label>
+<input type="number" id="hours"><br><br>
+
+<label>Difficulty (1-5):</label>
+<input type="number" id="difficulty" min="1" max="5"><br><br>
+
+<button onclick="addAssignment()">Analyze</button>
+
+<h2 id="result></h2>
+<h3 id="mostUrgent"></h3>
+
+<script src="script.js"></script>
+</body>
+</html>
