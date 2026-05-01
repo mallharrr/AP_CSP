@@ -20,3 +20,6 @@ The program asks the user to input a password, then checks it using a function c
 
 2) Run:
    java PasswordAnalyzer
+
+## Live Demo
+https://mallharrr.github.io/AP_CSP/
