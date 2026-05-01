@@ -10,12 +10,14 @@ body {
 
 .app {
   bakcground: white;
-  width: 320px;
+  width: 90%;
+  max-width: 320px;
   padding: 25px;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
   animation: fadeIn 0.8x ease;
+  backdrop-filter: blur(10px);
 }
 
 h1 {
