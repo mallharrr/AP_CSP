@@ -1,1 +1,12 @@
 text id="output1"
+
+Welcome to the Password Strength Analyzer
+
+Enter a password: hello123
+
+Password Strength: Medium
+Score: 3/5
+
+Suggestions:
+- Add an uppercase letter.
+- Add a special character.
