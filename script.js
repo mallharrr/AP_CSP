@@ -8,6 +8,117 @@ document.getElementById("result");
 
 let fill =
 document.getElementById("strengthFill");
+body {
+margin: 0;
+
+font-family: -apple-system,
+BlinkMacSystemFont,
+Arial,
+sans-serif;
+
+background: #f2f2f7;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 100vh;
+}
+
+.app {
+background: white;
+
+width: 90%;
+max-width: 320px;
+
+padding: 25px;
+
+border-radius: 25px;
+
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+text-align: center;
+}
+
+h1 {
+font-size: 22px;
+
+margin-bottom: 10px;
+}
+
+.subtitle {
+color: #8e8e93;
+
+font-size: 14px;
+
+margin-bottom: 20px;
+}
+
+input {
+width: 90%;
+
+padding: 12px;
+
+border-radius: 12px;
+
+border: 1px solid #ddd;
+
+margin-bottom: 15px;
+
+font-size: 14px;
+}
+
+input:focus {
+outline: none;
+
+border-color: #007aff;
+}
+
+button {
+width: 100%;
+
+padding: 12px;
+
+border: none;
+
+border-radius: 12px;
+
+background: #007aff;
+
+color: white;
+
+font-size: 15px;
+
+font-weight: bold;
+}
+
+.result {
+margin-top: 20px;
+
+font-size: 15px;
+}
+
+.strength-bar {
+width: 100%;
+
+height: 10px;
+
+background: #e5e5ea;
+
+border-radius: 20px;
+
+overflow: hidden;
+
+margin-top: 15px;
+}
+
+#strengthFill {
+height: 100%;
+
+width: 0%;
+
+border-radius: 20px;
+}
 
 let color = "red";
 
