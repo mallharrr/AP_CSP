@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Password Analyzer</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="app">
-      <h1>Password Strength Analyzer</h1>
-      <p class="subtitle">Analyze your password strength instantly</p>
+<head>
+<title>Password Analyzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-      <input type="password" id="passwordInput" placeholder="Enter password">
+<body>
 
-      <button onclick="checkPassword()">Analyze</button>
+<div class="app">
+<h1>Password Strength Analyzer</h1>
 
-      <div class="strength-bar">
-        <div id="strengthFill"></div>
-      </div>
+<p class="subtitle">
+Analyze your password security instantly
+</p>
 
-      <div id="result class="result"></div>
-    </div>
+<input
+type="password"
+id="passwordInput"
+placeholder="Enter password"
+>
 
-    <script src="script.js"></script>
-    
-  </body>
+<button onclick="checkPassword()">
+Analyze
+</button>
+
+<div class="strength-bar">
+<div id="strengthFill"></div>
+</div>
+
+<div id="result" class="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
