@@ -1,5 +1,6 @@
 # AP_CSP
 AP CSP Create Task Project
+I used Artificial Intelligence as a guide while debugging my project and improving my algorithm logic. Assistance from this helped me to identify and accurately fix issues related to the Javascript implementation and improve the structure in my password checking function. I wrote and tested all final code myself.
 
 ## Purpose
 This program helps users evaluate the strength of a password based on security rules like length, uppercase letters, numbers, and special characters.
