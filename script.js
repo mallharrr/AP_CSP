@@ -8,116 +8,77 @@ document.getElementById("result");
 
 let fill =
 document.getElementById("strengthFill");
-body {
-margin: 0;
 
-font-family: -apple-system,
-BlinkMacSystemFont,
-Arial,
-sans-serif;
+let score = 0;
 
-background: #f2f2f7;
+let suggestions = [];
 
-display: flex;
-justify-content: center;
-align-items: center;
+let specialChars = "!@#$%&*";
 
-height: 100vh;
+let hasUpper = false;
+let hasLower = false;
+let hasNumber = false;
+let hasSpecial = false;
+
+for (let i = 0; i < password.length; i++) {
+
+let c = password[i];
+
+if (c >= 'A' && c <= 'Z') {
+hasUpper = true;
 }
 
-.app {
-background: white;
-
-width: 90%;
-max-width: 320px;
-
-padding: 25px;
-
-border-radius: 25px;
-
-box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-
-text-align: center;
+else if (c >= 'a' && c <= 'z') {
+hasLower = true;
 }
 
-h1 {
-font-size: 22px;
-
-margin-bottom: 10px;
+else if (c >= '0' && c <= '9') {
+hasNumber = true;
 }
 
-.subtitle {
-color: #8e8e93;
-
-font-size: 14px;
-
-margin-bottom: 20px;
+else if (specialChars.includes(c)) {
+hasSpecial = true;
+}
 }
 
-input {
-width: 90%;
-
-padding: 12px;
-
-border-radius: 12px;
-
-border: 1px solid #ddd;
-
-margin-bottom: 15px;
-
-font-size: 14px;
+if (password.length >= 8) {
+score++;
+} else {
+suggestions.push("At least 8 characters");
 }
 
-input:focus {
-outline: none;
-
-border-color: #007aff;
+if (hasUpper) {
+score++;
+} else {
+suggestions.push("Add uppercase letter");
 }
 
-button {
-width: 100%;
-
-padding: 12px;
-
-border: none;
-
-border-radius: 12px;
-
-background: #007aff;
-
-color: white;
-
-font-size: 15px;
-
-font-weight: bold;
+if (hasLower) {
+score++;
+} else {
+suggestions.push("Add lowercase letter");
 }
 
-.result {
-margin-top: 20px;
-
-font-size: 15px;
+if (hasNumber) {
+score++;
+} else {
+suggestions.push("Add a number");
 }
 
-.strength-bar {
-width: 100%;
-
-height: 10px;
-
-background: #e5e5ea;
-
-border-radius: 20px;
-
-overflow: hidden;
-
-margin-top: 15px;
+if (hasSpecial) {
+score++;
+} else {
+suggestions.push("Add special character");
 }
 
-#strengthFill {
-height: 100%;
+let strength = "Weak";
 
-width: 0%;
+if (score >= 3) {
+strength = "Medium";
+}
 
-border-radius: 20px;
+if (score === 5) {
+strength = "Strong";
 }
 
 let color = "red";
