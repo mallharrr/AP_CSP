@@ -62,6 +62,11 @@ function checkPassword() {
     output += "<p>Excellent password</p>";
 }
 
+let fill = document.getElementById("strengthFill");
+
+fill.style.width = (score * 20) + "%";
+fill.style.background = color;
+  
 resultDiv.innerHTML = output;
 
 resultDiv.classList.remove("show");
